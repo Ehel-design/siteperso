@@ -1,0 +1,244 @@
+/*Header*/
+.head {
+  display: inline;
+  width:100%; 
+}
+
+#main-menu-list {
+   margin:0;
+   padding-top:8px;
+   padding-left:0;
+   background: none;
+   width:100%;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   display: flex;
+   list-style: none;
+}
+
+#logo {
+  flex-grow: 1;
+}
+
+#main-menu-list li 
+{
+  background: none;
+}
+
+
+.underline a:hover {
+	box-shadow: inset 0px -7px 0px blue;
+}
+
+.underline a:active {
+	box-shadow: inset 0px -10px 0px blue;
+}
+
+#main-menu-list a:link, #main-menu-list a:visited 
+{
+   color:#000;
+   background:none;
+   padding:0px 2px 0px 2px;
+   float:left;
+   justify-content: space-between;
+   text-decoration :none;
+   width:auto;
+   margin:10px 20px 10px 15px;
+}
+
+#main-menu-list a {
+  font:bold 1em/1em Arial, Helvetica, sans-serif;
+  text-transform:uppercase;
+  display : flex;
+  align-items: center;
+  
+}
+
+#main-menu-list li#logo {
+  color:green;
+}
+
+/*Buble forme*/
+:root {
+  --backgroundColor: white;
+  --dropShadowColor: rgba(0, 0, 0, .5);
+}
+
+html,
+body {
+  overflow: hidden;
+  background-color: var(--backgroundColor);
+}
+
+main {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+}
+
+.blob {
+  margin: auto;
+  z-index:5;
+  
+}
+
+
+
+.projects {
+  z-index: 3;
+  position: absolute;
+  display : inline-flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.mouve {
+  animation: stretch 10s ease-in-out infinite;
+  animation-direction: alternate-reverse; 
+  stroke: blue;
+  stroke-width: 2px;
+  margin-right: 30%;
+  transition: 0.5s;
+}
+
+.mouve:hover {
+  stroke: blue;
+  stroke-width: 8px;
+  margin-right: 30%;
+  transition: 0.5s;
+  
+}
+
+a {
+  stroke: blue;
+}
+
+#bouton:hover {
+  stroke-width: 10px;
+  transition: 0.5s;
+}
+
+#bouton {
+  stroke-width: 0px;
+  stroke: blue;
+  transition: 0.5s;
+  animation: pulse 6s ease-out infinite;
+}
+
+
+.hiddensvg {
+  display:none;
+  width: 50%;
+  height: 300px;
+  margin-top: 5%;
+}
+
+@keyframes stretch {
+  0%   { transform: scale(0.9)   translate(0, 0) rotate(0deg); filter: drop-shadow( -2px -2px 5px rgba(0, 0, 0, .5)); } 
+  
+  25%  { transform: scale(1) translate(30, 0) rotate(-36deg); filter: drop-shadow( -2px -2px 5px rgba(0, 0, 0, .5)); }
+  
+  50%  { transform: scale(1.05) translate(20, 0) rotate(random(360) + deg); filter: drop-shadow( -2px -2px 5px rgba(0, 0, 0, .5)); }
+  
+  75%  { transform: scale(1.15) translate(0, 0) rotate(-15deg); filter: drop-shadow( -2px -2px 5px rgba(0, 0, 0, .5)); }
+  
+  100% { transform: scale(1.2)   translate(10, 0) rotate(360deg); filter: drop-shadow( -2px -2px 5px rgba(0, 0, 0, .5)); }
+}
+
+@keyframes pulse {
+  0%   { transform: scale(0.9)  } 
+  
+  50%  { transform: scale(1.2) }
+  
+  100% { transform: scale(0.9) }
+}
+
+.titre {
+  font:bold 14pt Roboto, sans-serif;
+  line-height: 100%;
+  text-align: center;
+  color: blue;
+  margin: 10px;
+  opacity: 0.9;
+}
+
+/*.titre:hover {
+  font:bold 14pt Roboto, sans-serif;
+  line-height: 100%;
+  text-align: center;
+  color: blue;
+  margin: 10px;
+  opacity: 0.2;
+}*/
+
+
+/* Réseaux */
+
+#slide-menu{
+  list-style:none;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed;
+  top: 70%;
+  right: 0;
+  z-index: 9998;
+  box-sizing: inherit;
+}
+
+li.sliding-item {
+  padding: none;
+  margin-bottom: 10px;
+  background:blue;
+  justify-content: space-between;
+  right:0px;
+  width:60px;
+  z-index:10;
+}
+
+
+.sliding-item:hover{
+     right:160px;
+     opacity:1;
+     width:160px; 
+     transition:1s;
+     z-index:10;
+
+}
+
+.sliding-item:hover .slide-txt {
+  display: block;
+  left:0px;
+}
+
+.sliding-item:hover a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+ 
+
+.slide-txt {
+  text-decoration: none;
+  color : white;
+  font:bold 0.9em/0.9em Arial, Helvetica, sans-serif;
+  text-transform:uppercase;
+  display: none;
+  padding-right:10px;
+
+  
+}
+
+.slide-picto {
+  display:flex;
+  padding-left:none;
+ 
+  
+  
+}

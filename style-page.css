@@ -1,0 +1,192 @@
+.head {
+  display: inline;
+  width:100%; 
+}
+
+#main-menu-list {
+   margin:0;
+   padding-top:8px;
+	 padding-left:0;
+   background: none;
+   width:100%;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   display: flex;
+   list-style: none;
+}
+
+#logo {
+  flex-grow: 1;
+}
+
+#main-menu-list li 
+{
+  background: none;
+}
+
+
+.underline a:hover {
+	box-shadow: inset 0px -7px 0px blue;
+}
+
+.underline a:active {
+	box-shadow: inset 0px -10px 0px blue;
+}
+
+#main-menu-list a:link, #main-menu-list a:visited 
+{
+   color:#000;
+   background:none;
+   padding:0px 2px 0px 2px;
+   float:left;
+   justify-content: space-between;
+   text-decoration :none;
+   width:auto;
+   margin:10px 20px 10px 15px;
+}
+
+#main-menu-list a {
+  font:bold 1em/1em Roboto, sans-serif;
+  text-transform:uppercase;
+  display : flex;
+  align-items: center;
+  
+}
+
+#main-menu-list li#logo {
+  color:green;
+}
+
+
+/*corp*/
+
+#apropos {
+	display: flex;
+	width:85%;
+	margin-top:8%;
+	margin-left: 7.5%;
+  margin-right: 7.5%;
+	flex-wrap: wrap;
+	margin-bottom: 150px;
+	align-items: center;
+  justify-content: center;
+}
+
+#photo {
+	display: flex;
+	flex-wrap: wrap;
+	align-self: flex-start;
+	align-items:flex-start;
+	justify-content:center;
+	margin-left:40px;
+	margin-top:45px;
+	max-width:35%;
+	height: 100px;
+	flex-grow:1;
+}
+
+
+#txt {
+	width:50%;
+	flex-grow:1;
+	
+}
+
+#photo img{
+	width:100%;
+	margin-top:30px;
+	box-shadow: 0px 5px blue;
+	
+}
+
+#photo button {
+	margin-top:30px;
+	width:70%;
+	height:30px;
+	color: white;
+	background-color: blue;
+	border: none;
+	transition:0.5s;
+}
+
+#photo button a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#photo button:hover {
+	height:30px;
+	border: 2px solid blue;
+	background-color:white;
+	transition:0.5s;
+}
+
+#photo button:hover a{
+	color: blue;
+
+}
+
+
+#cv {
+	display: flex;
+	justify-content:center;
+	align-items: flex-start;
+}
+
+#part1 {
+	margin-right:12.5px;
+	width:50%;
+	
+}
+
+#part2 {
+	margin-left:12.5px;
+	width:50%;
+}
+
+
+
+/*Style texte*/
+
+h1 {
+	font:bold 28pt Roboto, sans-serif;
+	line-height: 100%;
+}
+
+h3{
+	font:bold 18pt Roboto, sans-serif;
+	line-height: 110%;
+}
+
+h2{
+	font:400 14pt Roboto, sans-serif;
+	line-height: 150%;
+}
+
+p {
+	font:400 11pt Roboto, sans-serif;
+	line-height: 120%;
+}
+
+.list {
+	line-height: 180%;
+}
+
+#part2 p {
+	font:400 11pt Roboto, sans-serif;
+	line-height: 130%;
+}
+
+
+b {
+	color:blue;
+}
+
+
+i {
+	font:300 italic 10pt Roboto, sans-serif;
+	line-height: 50%;
+	color: blue;
+}
